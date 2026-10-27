@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Data-As-A-Service-DAAS/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-As-A-Service-DAAS?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-As-A-Service-DAAS/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-As-A-Service-DAAS?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-As-A-Service-DAAS/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-As-A-Service-DAAS?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-As-A-Service-DAAS/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Data-As-A-Service-DAAS?style=flat-square&color=blue" alt="License" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-As-A-Service-DAAS/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
@@ -88,51 +88,51 @@ Commercial DaaS providers deliver turn-key data feeds, pre-packaged firmographic
 Open-source DaaS platforms enable teams to deploy self-hosted data portals, operate decentralized data monetization protocols, and run secure data sharing hubs without vendor lock-in.
 
 > [!TIP]
-> Repositories below are equipped with live star badges (`style=social`, `color=white`) linking directly to their official stargazers pages, sorted in **descending order of GitHub Stars** ⭐.
+> Repositories below are equipped with live Stars_Badges (`style=social`, `color=white`) linking directly to their official stargazers pages, sorted in **descending order of GitHub_Stars** ⭐.
 
-### 1. **[CKAN](https://github.com/ckan/ckan)** [![GitHub stars](https://img.shields.io/github/stars/ckan/ckan?style=social&color=white)](https://github.com/ckan/ckan/stargazers)
+### 1. **[CKAN](https://github.com/ckan/ckan)** [![GitHub_Stars](https://img.shields.io/github/stars/ckan/ckan?style=social&color=white)](https://github.com/ckan/ckan/stargazers)
 * **The world's leading open-source data management system (DMS) and data portal platform** (GPL-3.0)
 * **Overview**: CKAN powers flagship national open-data portals including *Data.gov* (US), *Open.canada.ca* (Canada), and *Data.humdata.org* (UN OCHA). It provides complete dataset publishing, rich geospatial metadata search, API access via DataStore/DataPusher, and granular organization access controls.
 * **Tech Stack**: Python (Flask/SQLAlchemy), PostgreSQL, Solr, Redis.
 * **Best For**: Governments, public sector bodies, research institutions, and large enterprises requiring a battle-tested portal to publish, catalog, and share thousands of public or internal datasets.
 
-### 2. **[PortalJS](https://github.com/datopian/portaljs)** [![GitHub stars](https://img.shields.io/github/stars/datopian/portaljs?style=social&color=white)](https://github.com/datopian/portaljs/stargazers)
+### 2. **[PortalJS](https://github.com/datopian/portaljs)** [![GitHub_Stars](https://img.shields.io/github/stars/datopian/portaljs?style=social&color=white)](https://github.com/datopian/portaljs/stargazers)
 * **AI-native modern framework for building data portals and dataset frontends** (MIT)
 * **Overview**: Created by Datopian (the founding maintainers of CKAN), PortalJS allows engineering teams to scaffold high-performance, modern data catalog experiences in minutes. It supports backend-agnostic dataset loading (CKAN, GitHub flat files, Frictionless Data) and integrates agentic workflows for autonomous dataset indexing.
 * **Tech Stack**: TypeScript, Next.js, React, TailwindCSS.
 * **Best For**: Modern product and web engineering teams looking to build headless, blazing-fast data portals and external data showcase pages with contemporary JavaScript tooling.
 
-### 3. **[ODD Platform (Open Data Discovery)](https://github.com/opendatadiscovery/odd-platform)** [![GitHub stars](https://img.shields.io/github/stars/opendatadiscovery/odd-platform?style=social&color=white)](https://github.com/opendatadiscovery/odd-platform/stargazers)
+### 3. **[ODD Platform (Open Data Discovery)](https://github.com/opendatadiscovery/odd-platform)** [![GitHub_Stars](https://img.shields.io/github/stars/opendatadiscovery/odd-platform?style=social&color=white)](https://github.com/opendatadiscovery/odd-platform/stargazers)
 * **Open-source data discovery, data lineage, and observability platform** (Apache-2.0)
 * **Overview**: Provides comprehensive metadata management, cross-system data lineage, SLA tracking, and data health observability. Built to help organizations catalog and govern internal/external data assets while tracking data quality degradation in production pipelines.
 * **Tech Stack**: Java, Spring Boot, React, PostgreSQL.
 * **Best For**: Data platform teams requiring automated end-to-end lineage, discovery, and governance across disparate cloud data lakes and external data feeds.
 
-### 4. **[Delta Sharing](https://github.com/delta-io/delta-sharing)** [![GitHub stars](https://img.shields.io/github/stars/delta-io/delta-sharing?style=social&color=white)](https://github.com/delta-io/delta-sharing/stargazers)
+### 4. **[Delta Sharing](https://github.com/delta-io/delta-sharing)** [![GitHub_Stars](https://img.shields.io/github/stars/delta-io/delta-sharing?style=social&color=white)](https://github.com/delta-io/delta-sharing/stargazers)
 * **Open protocol for secure, real-time cross-platform data sharing** (Apache-2.0)
 * **Overview**: Delta Sharing establishes the first open standard for sharing massive live datasets directly across organizations, compute engines, and clouds without copying data. It natively underpins commercial offerings like Databricks Marketplace and integrates seamlessly with PowerBI, Pandas, Apache Spark, and Presto/Trino.
 * **Tech Stack**: Scala, Python, Rust, Delta Lake.
 * **Best For**: Data engineering teams wanting to deliver secure, zero-copy DaaS data feeds to external clients regardless of their downstream compute stack.
 
-### 5. **[Magda](https://github.com/magda-io/magda)** [![GitHub stars](https://img.shields.io/github/stars/magda-io/magda?style=social&color=white)](https://github.com/magda-io/magda/stargazers)
+### 5. **[Magda](https://github.com/magda-io/magda)** [![GitHub_Stars](https://img.shields.io/github/stars/magda-io/magda?style=social&color=white)](https://github.com/magda-io/magda/stargazers)
 * **Federated microservice data catalog and discovery platform for big and small data** (Apache-2.0)
 * **Overview**: Originally engineered for the Australian Commonwealth Government (*data.gov.au*), Magda features a cloud-native Kubernetes architecture designed for automated metadata harvesting from disparate sources (CKAN, CSW, ESRI), enterprise authorization policies (Open Policy Agent), and deep search indexing.
 * **Tech Stack**: TypeScript, Scala, Kubernetes/Helm, PostgreSQL, Elasticsearch.
 * **Best For**: Distributed enterprises and governments needing a scalable, Kubernetes-native federated data catalog pulling from dozens of external data repositories.
 
-### 6. **[Ocean Protocol (ocean.py)](https://github.com/oceanprotocol/ocean.py)** [![GitHub stars](https://img.shields.io/github/stars/oceanprotocol/ocean.py?style=social&color=white)](https://github.com/oceanprotocol/ocean.py/stargazers)
+### 6. **[Ocean Protocol (ocean.py)](https://github.com/oceanprotocol/ocean.py)** [![GitHub_Stars](https://img.shields.io/github/stars/oceanprotocol/ocean.py?style=social&color=white)](https://github.com/oceanprotocol/ocean.py/stargazers)
 * **Decentralized data exchange protocol with Compute-to-Data privacy preservation** (Apache-2.0)
 * **Overview**: Ocean Protocol allows teams to tokenize and monetize private datasets as Data NFTs (ERC-721) and Datatokens (ERC-20). Its breakthrough **Compute-to-Data (C2D)** paradigm enables buyers to run algorithms and AI training against private datasets without the raw data ever leaving the host premises—only verified computation outputs are returned.
 * **Tech Stack**: Python (ocean.py), Smart Contracts (Solidity), IPFS/Arweave, decentralized cloud storage.
 * **Best For**: Organizations handling sensitive, regulated healthcare, financial, or mobility data who want to monetize data algorithms while guaranteeing zero data leakage.
 
-### 7. **[UDAM (Unified Data Agent Marketplace)](https://github.com/data-agent-marketplace/data-agent-marketplace)** [![GitHub stars](https://img.shields.io/github/stars/data-agent-marketplace/data-agent-marketplace?style=social&color=white)](https://github.com/data-agent-marketplace/data-agent-marketplace/stargazers)
+### 7. **[UDAM (Unified Data Agent Marketplace)](https://github.com/data-agent-marketplace/data-agent-marketplace)** [![GitHub_Stars](https://img.shields.io/github/stars/data-agent-marketplace/data-agent-marketplace?style=social&color=white)](https://github.com/data-agent-marketplace/data-agent-marketplace/stargazers)
 * **API-first open data marketplace backend for AI agents and developer data monetization** (MIT)
 * **Overview**: Provides an out-of-the-box infrastructure template for listing data services and APIs, issuing AES-256 encrypted access tokens, processing Stripe checkout flows, and handling concurrency-safe transactions with PostgreSQL row locks.
 * **Tech Stack**: Node.js, Express, Next.js, PostgreSQL 16, Stripe API.
 * **Best For**: Indie developers and boutique data agencies building their own commercial API checkout marketplace with token licensing built in.
 
-### 8. **[Company Atlas](https://github.com/CoreSheep/company-atlas)** [![GitHub stars](https://img.shields.io/github/stars/CoreSheep/company-atlas?style=social&color=white)](https://github.com/CoreSheep/company-atlas/stargazers)
+### 8. **[Company Atlas](https://github.com/CoreSheep/company-atlas)** [![GitHub_Stars](https://img.shields.io/github/stars/CoreSheep/company-atlas?style=social&color=white)](https://github.com/CoreSheep/company-atlas/stargazers)
 * **Unified open-source firmographic data aggregation platform** (MIT)
 * **Overview**: A practical open-source data pipeline aggregating Fortune 1000 company datasets from Kaggle, Wikipedia, and SEC filings. Demonstrates automated enrichment pipelines utilizing modern scraping and asynchronous HTTP frameworks.
 * **Tech Stack**: Python, AsyncIO, HTTPX, BeautifulSoup, Trio.
@@ -179,7 +179,7 @@ We actively welcome contributions to keep this directory comprehensive and up to
 1. **Fork** this repository.
 2. **Add or edit** entries in [`README.md`](README.md).
    - Ensure commercial tools include exact starting prices and free tier limits.
-   - Ensure open-source projects include official repository links, star badges (`style=social`, `color=white`), license info, and practical use cases.
+   - Ensure open-source projects include official repository links, Stars_Badges (`style=social`, `color=white`), license info, and practical use cases.
 3. **Submit a Pull Request** with a concise description of your additions.
 
 ---
