@@ -32,79 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global Data-as-a-Service (DaaS) market is estimated at **$23B to $26B in 2025–2026** and projected to surpass **$50B+ by 2030**, expanding at a 15%–20% CAGR fueled by generative AI demand for external training and fine-tuning datasets. The industry exhibits a **moderately fragmented** structure: traditional data powerhouses and hyperscale cloud marketplaces control 45%–50% of revenue at the top tier, while a large, highly competitive long-tail of niche vendors provides specialized vertical, firmographic, and real-time alternative data.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Snowflake Data Marketplace](https://www.snowflake.com/)**
-
-  **Cloud data marketplace** integrated with Snowflake's data cloud. Provides access to third-party datasets from providers including S&P Global, Thomson Reuters, and Bright Data, with native governance and sharing controls . **Pricing**: Consumption-based (Snowflake credits) plus provider-specific data costs; quote-based. **Free tier**: Trial credits available. **Best for**: organizations already on Snowflake wanting to discover and access external datasets without data movement.
-
-
-
-- **[Databricks Marketplace](https://www.databricks.com/)**
-
-  **Open data marketplace** integrated with the Databricks lakehouse. **Pricing**: Consumption-based (DBUs) plus provider listings; quote-based. **Free tier**: Community Edition limited. **Best for**: data teams on Databricks wanting to combine external datasets with internal lakehouse analytics.
-
-
-
-- **[ZoomInfo](https://www.zoominfo.com/)**
-
-  **B2B contact and company intelligence platform** with extensive firmographic and technographic data. **Pricing**: Quote-only; annual contracts typical. **Free tier**: Limited trial available. **Best for**: sales and marketing teams needing broad B2B prospecting and enrichment data.
-
-
-
-- **[Clearbit](https://clearbit.com/)** (HubSpot)
-
-  **Data enrichment and intelligence API** for company and person data. **Pricing**: Usage-based API pricing; quote for enterprise. **Free tier**: Limited free tier for basic lookups. **Best for**: product and growth teams wanting real-time enrichment via API.
-
-
-
-- **[People Data Labs](https://www.peopledatalabs.com/)**
-
-  **Person and company data enrichment API** with a large global dataset. **Pricing**: Credit-based API pricing; quote for volume. **Free tier**: Trial credits available. **Best for**: developers and data teams wanting flexible API access to people and company data.
-
-
-
-- **[Enigma](https://www.enigma.com/)**
-
-  **Financial and business data intelligence** focused on SMB and merchant data. **Pricing**: Quote-only. **Free tier**: None. **Best for**: financial services and fintech companies needing verified business data.
-
-
-
-- **[Coresignal](https://www.coresignal.com/)**
-
-  **Public web data API** for company and employee data. **Pricing**: Credit-based API pricing. **Free tier**: Trial available. **Best for**: data teams wanting fresh, structured public web data via API.
-
-
-
-- **[Crunchbase Enterprise](https://www.crunchbase.com/)**
-
-  **Private company and funding data platform** for market intelligence. **Pricing**: Quote-only for enterprise; self-serve tiers available. **Free tier**: Limited free access. **Best for**: investors, analysts, and sales teams tracking startups and private markets.
-
-
-
-- **[Experian Data Quality](https://www.experian.com/)**
-
-  **Data quality and enrichment services** for customer and business data. **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises needing data validation, cleansing, and enrichment at scale.
-
-
-
-- **[Workday Data As A Service](https://www.workday.com/)**
-
-  **Data services within the Workday ecosystem** for HR and finance data. **Pricing**: Quote-only; bundled with Workday suite. **Free tier**: None. **Best for**: Workday customers wanting governed access to Workday data for analytics and integrations.
-
-
+| Platform | Valuation / Company Size | Pricing (Starting Tier) | Free Tier / Trial Limits | Key Capabilities & Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Databricks Marketplace](https://www.databricks.com/)** | **~$190B valuation** ($7B+ ARR run-rate) | Consumption-based starting at **$0.07/DBU** (Jobs Light) to **$0.22–$0.55/DBU** (SQL/Jobs); external provider data listings priced separately | **14-day free trial** with **$400 in trial credits** (cloud infrastructure compute/storage billed separately) | Open lakehouse data marketplace built on Delta Sharing; best for data science and AI teams querying shared datasets natively. |
+| **[Snowflake Data Marketplace](https://www.snowflake.com/)** | **~$110B market cap** ($4.7B+ TTM revenue) | Consumption-based starting at **$2.00/credit** (Standard Edition virtual warehouse) + storage from ~$23–$40/TB/month; data vendor listings priced individually | **30-day free trial** with **$400 in usage credits** | Zero-copy SQL querying of live third-party datasets; best for existing Snowflake enterprises needing instant external data joins. |
+| **[Workday Data As A Service](https://www.workday.com/)** | **~$50B market cap** ($10.1B TTM revenue) | Custom enterprise quote; HCM suites baseline around **$96–$504/employee/year** with modular data add-ons | **No free tier** for core platform; **30-day free trial** available specifically for Workday Adaptive Planning test tenant | Governed enterprise benchmarking, HR, and financial data services embedded into Workday ERP. |
+| **[Experian Data Quality](https://www.experian.com/)** | **~$35B market cap** ($8.8B annual revenue) | Enterprise quote-based; Aperture Studio deployments baseline around **$72,000–$110,000+/year**; API bundles scale by credit pack | **14-day free trial** capped at **500 Address, 500 Email, and 500 Phone validation credits** | Enterprise-grade identity verification, address cleansing, and customer record deduplication. |
+| **[Clearbit](https://clearbit.com/) (HubSpot)** | **~$13B parent market cap** ($1.9B+ parent revenue) | Integrated into HubSpot Breeze Intelligence; requires paid HubSpot Starter starting at **$15–$20/seat/month** | **No standalone free tier** (legacy free API/extensions sunset); free HubSpot CRM accounts do not include enrichment credits | Real-time B2B firmographic and contact enrichment built directly into marketing/sales CRM workflows. |
+| **[ZoomInfo](https://www.zoominfo.com/)** | **~$1.2B market cap** ($1.2B annual revenue) | Annual contracts only, Professional tier starting at **$14,995/year** (~$1,250/month) for 3 user seats | **ZoomInfo Lite free tier** (heavily restricted monthly lookups); no self-serve free trial for core SalesOS database | Comprehensive global B2B contact intelligence, intent data, and organizational chart mapping. |
+| **[People Data Labs](https://www.peopledatalabs.com/)** | **~$350M valuation** ($47M+ funding, ~$18M ARR) | Pro tier starting at **$98/month** for 350 person credits ($0.28/match) or **$100/month** for 1,000 company credits | **Free forever plan** with **100 credits/month** (contact details obfuscated, testing and schema evaluation only) | Developer-first B2B and person resume/profile enrichment API with global coverage. |
+| **[Crunchbase Enterprise](https://www.crunchbase.com/)** | **~$200M valuation** ($100M funding, ~$38M ARR) | Pro tier starting at **$49/month** (billed annually at $588/yr) or $99/month-to-month; Business tier starts at **$199/month** | **7-day free trial** of Pro (exports locked); basic free account limited to **~5 search results/query and 0 export rows** | Private startup funding, investment rounds, executive moves, and venture market intelligence. |
+| **[Enigma](https://www.enigma.com/)** | **~$150M valuation** ($130M funding, ~$15M ARR) | Pro tier starting at **$20/month** (includes 2,100 credits; additional at 1¢/credit); Max tier at **$200/month** (25,000 credits) | **Free forever plan** at **$0/month** for unlimited console browsing, company search, and live summary views (attributes cost credits) | Merchant transaction intelligence, SMB identity resolution, and real-time KYB risk verification. |
+| **[Coresignal](https://www.coresignal.com/)** | **~$30M revenue** (Bootstrapped / Profitable) | Mini tier starting at **$49/month**; Starter tier at **$199/month** (10% discount on annual billing) | **7-day free trial** with **2,000 API credits** capped at 5 req/sec (1 trial per company domain) | Large-scale public web data, firmographics, workforce movement, and raw hiring trends via API. |
 
 ## Open-Source GitHub Projects
 
