@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.25" />
+    </linearGradient>
+
+    <!-- Filters for Glow & Shadows -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.6" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1); opacity: 0.35; }
+      50% { transform: scale(1.18); opacity: 0.6; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-14px) translateX(10px); opacity: 0.8; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+    }
+    @keyframes streamData {
+      0% { stroke-dashoffset: 120; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes rotateRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .orb-left {
+      transform-origin: 180px 140px;
+      animation: pulseOrb 8s ease-in-out infinite;
+    }
+    .orb-right {
+      transform-origin: 1040px 260px;
+      animation: pulseOrb 7s ease-in-out infinite 1.5s;
+    }
+    .particle-1 { animation: floatParticle 5s ease-in-out infinite; }
+    .particle-2 { animation: floatParticle 6s ease-in-out infinite 1s; }
+    .particle-3 { animation: floatParticle 7s ease-in-out infinite 2s; }
+
+    .data-flow {
+      stroke-dasharray: 8 16;
+      animation: streamData 3s linear infinite;
+    }
+    .rotating-ring {
+      transform-origin: 1060px 100px;
+      animation: rotateRing 20s linear infinite;
+    }
+
+    .main-title {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 800;
+      font-size: 54px;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 400;
+      font-size: 21px;
+      letter-spacing: -0.01em;
+    }
+    .pill-text {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="20" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" rx="20" fill="url(#grid)" />
+
+  <!-- Dynamic Glowing Orbs (in background) -->
+  <circle class="orb-left" cx="180" cy="140" r="160" fill="#38bdf8" filter="url(#glow)" />
+  <circle class="orb-right" cx="1040" cy="260" r="190" fill="#818cf8" filter="url(#glow)" />
+  <circle cx="600" cy="210" r="120" fill="#c084fc" opacity="0.12" filter="url(#glow)" />
+
+  <!-- Geometric Decorative Rotating Ring in background corner -->
+  <g class="rotating-ring" opacity="0.25">
+    <circle cx="1060" cy="100" r="65" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 12" />
+    <circle cx="1060" cy="100" r="80" fill="none" stroke="#818cf8" stroke-width="1" stroke-dasharray="4 8" />
+  </g>
+
+  <!-- Dynamic Data Stream Nodes & Connectors (Subtle background layer) -->
+  <g opacity="0.45">
+    <path class="data-flow" d="M 80 340 Q 320 370 560 330 T 1120 350" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path class="data-flow" d="M 100 80 Q 400 30 700 70 T 1100 60" fill="none" stroke="#818cf8" stroke-width="1.5" />
+    
+    <circle class="particle-1" cx="240" cy="345" r="4" fill="#38bdf8" />
+    <circle class="particle-2" cx="720" cy="335" r="3.5" fill="#c084fc" />
+    <circle class="particle-3" cx="980" cy="348" r="5" fill="#818cf8" />
+  </g>
+
+  <!-- FOREGROUND LAYER: Content strictly positioned for high legibility -->
+  
+  <!-- Category Badge / Pill -->
+  <g transform="translate(600, 75)">
+    <rect x="-140" y="-18" width="280" height="36" rx="18" fill="url(#pillGrad1)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="-114" cy="0" r="4.5" fill="#38bdf8" />
+    <text class="pill-text" x="-98" y="4.5" fill="#38bdf8">CURATED AWESOME DIRECTORY</text>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(600, 155)">
+    <text class="main-title" text-anchor="middle" fill="url(#primaryGrad)" filter="url(#subtleGlow)">
+      Data-As-A-Service (DaaS)
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <g transform="translate(600, 205)">
+    <text class="subtitle" text-anchor="middle" fill="#94a3b8">
+      Top Commercial Marketplaces, Data Enrichment APIs &amp; Open-Source Infrastructure
+    </text>
+  </g>
+
+  <!-- Feature Metric Pills (Horizontal Layout) -->
+  <g transform="translate(600, 290)">
+    <!-- Pill 1: Data Marketplaces -->
+    <g transform="translate(-360, 0)">
+      <rect x="-105" y="-22" width="210" height="44" rx="22" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <circle cx="-75" cy="0" r="6" fill="#38bdf8" />
+      <text class="pill-text" x="-55" y="5" fill="#e2e8f0">DATA MARKETPLACES</text>
+    </g>
+
+    <!-- Pill 2: Firmographic Enrichment -->
+    <g transform="translate(-120, 0)">
+      <rect x="-115" y="-22" width="230" height="44" rx="22" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <circle cx="-85" cy="0" r="6" fill="#818cf8" />
+      <text class="pill-text" x="-65" y="5" fill="#e2e8f0">B2B ENRICHMENT APIS</text>
+    </g>
+
+    <!-- Pill 3: Identity & KYB -->
+    <g transform="translate(120, 0)">
+      <rect x="-105" y="-22" width="210" height="44" rx="22" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <circle cx="-75" cy="0" r="6" fill="#c084fc" />
+      <text class="pill-text" x="-55" y="5" fill="#e2e8f0">IDENTITY &amp; KYB DATA</text>
+    </g>
+
+    <!-- Pill 4: Open Source Stacks -->
+    <g transform="translate(350, 0)">
+      <rect x="-105" y="-22" width="210" height="44" rx="22" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+      <circle cx="-75" cy="0" r="6" fill="#34d399" />
+      <text class="pill-text" x="-55" y="5" fill="#e2e8f0">OPEN DATA PORTALS</text>
+    </g>
+  </g>
+
+  <!-- Bottom Border Highlight -->
+  <line x1="200" y1="418" x2="1000" y2="418" stroke="url(#primaryGrad)" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+</svg>
